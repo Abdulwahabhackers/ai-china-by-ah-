@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI CHINA By AH | منصة الأدوات الصينية الذكية</title>
+
+    <!-- خط عربي عصري -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- إعداد Tailwind CDN (يتوافق مع البنية بدون ملفات إعداد إضافية) -->
+    <script>
+      tailwind = {
+        config: {
+          darkMode: "class",
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Cairo", "Tajawal", "sans-serif"],
+              },
+              colors: {
+                neon: {
+                  gold: "#f0c674",
+                  cyan: "#22d3ee",
+                  purple: "#a78bfa",
+                  pink: "#f472b6",
+                },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html,
+      body {
+        background: #0b0f1a;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
